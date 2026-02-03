@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voxel CV Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+<body>
+    <canvas id="game-canvas"></canvas>
+    <div id="crosshair">+</div>
+    <div id="camera-container">
+        <video id="input-video" style="display:none"></video>
+        <canvas id="debug-canvas"></canvas>
+    </div>
+
+    <script src="js/scene.js"></script>
+    <script src="js/headTracker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
